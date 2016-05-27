@@ -31,7 +31,7 @@ public class Demo_BehaviorSubject {
             }
         };
 
-        subject.subscribe(observer);//收到后面 三个事件
+        subject.subscribe(observer);//收到后面三个事件
         subject.onNext("one");
         subject.onNext("two");
         subject.onNext("three");
