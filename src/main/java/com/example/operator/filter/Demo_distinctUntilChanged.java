@@ -16,7 +16,7 @@ public class Demo_distinctUntilChanged {
         List<Integer> list = Arrays.asList(1,1,1,1,2,2,2,3,3,4);
 
         Observable.from(list)
-                .distinctUntilChanged()//鍙湁鏁版嵁鍙樺寲鐨勬椂鍊欐墠鍙戦�侀�氱煡
+                .distinctUntilChanged()//只有数据变化的时候才发送通知
                 .subscribe(new Observer<Integer>() {
             @Override
             public void onCompleted() {

@@ -20,11 +20,11 @@ public class Demo_merge_mergeDelayError {
         Observable<Integer> observable1 = Observable.from(list1);
         Observable<Integer> observable2 = Observable.from(list2);
 
-        Observable<Integer> mergedObservable = Observable.merge(observable1,observable2);//åˆå¹¶ä¸¤ä¸ªæ•°æ®æº
+        Observable<Integer> mergedObservable = Observable.merge(observable1,observable2);//åˆå¹¶ä¸¤ä¸ªæ•°æ®æº?
 
 
 //        Observable.mergeDelayError(observable1,observable2);
-// ä»ä¸€ä¸ªObservableä¸­ç»§ç»­å‘å°„æ•°æ®å³ä¾¿æ˜¯å…¶ä¸­æœ‰ä¸€ä¸ªæŠ›å‡ºäº†é”™è¯¯ã€‚å½“æ‰€æœ‰çš„Observableséƒ½å®Œæˆæ—¶ï¼ŒmergeDelayError()å°†ä¼šå‘å°„onError()
+// ´ÓÒ»¸öObservableÖĞ¼ÌĞø·¢ÉäÊı¾İ¼´±ãÊÇÆäÖĞÓĞÒ»¸öÅ×³öÁË´íÎó¡£µ±ËùÓĞµÄObservables¶¼Íê³ÉÊ±£¬mergeDelayError()½«»á·¢ÉäonError()
 
         mergedObservable.subscribe(new Action1<Integer>() {
             @Override

@@ -8,8 +8,8 @@ import rx.subjects.AsyncSubject;
  */
 public class Demo_AsyncSubject {
     /**
-     * ä¸€å®šè¦è°ƒç”¨onCompleteæ–¹æ³•
-     * åªä¼šå‘é€æœ€åä¸€ä¸ªæ•°æ®
+     * Ò»¶¨Òªµ÷ÓÃonComplete·½·¨
+     * Ö»»á·¢ËÍ×îºóÒ»¸öÊı¾İ
      * @param args
      */
     public static void main(String[] args){
@@ -38,7 +38,7 @@ public class Demo_AsyncSubject {
         subject.onNext("two");
         subject.onNext("three");
 
-        subject.onCompleted();//ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
+        subject.onCompleted();//!!!!!!!!!!!!!!!!!!!!!!
 
 
         // observer will receive "three" as the only onNext event.

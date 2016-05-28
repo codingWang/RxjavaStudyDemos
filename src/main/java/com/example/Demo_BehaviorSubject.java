@@ -4,11 +4,14 @@ import rx.Observer;
 import rx.subjects.BehaviorSubject;
 
 /**
- * Created by æœä¼Ÿ on 2016/5/26.
+ * Created by duwei on 2016/5/26.
  */
 public class Demo_BehaviorSubject {
 
-
+    /***
+     * ÊÂ¼ş¶©ÔÄÒÔºóÖ»ÊÕµ½×î½üÒ»´ÎµÄÊÂ¼şºÍ¶©ÔÄÖ®ºóµÄÊÂ¼ş
+     * @param args
+     */
     public static void main(String[] args) {
 
         // observer will receive all events.
@@ -31,7 +34,7 @@ public class Demo_BehaviorSubject {
             }
         };
 
-        subject.subscribe(observer);//æ”¶åˆ°åé¢ä¸‰ä¸ªäº‹ä»¶
+        subject.subscribe(observer);//ÊÕµ½ºóÃæÈı¸ö
         subject.onNext("one");
         subject.onNext("two");
         subject.onNext("three");
@@ -39,7 +42,7 @@ public class Demo_BehaviorSubject {
 //        // observer will receive the "one", "two" and "three" events, but not "zero"
 //        BehaviorSubject<Object> subject = BehaviorSubject.create("default");
 //        subject.onNext("zero");
-//        subject.onNext("one");        //æœ€è¿‘ä¸€ä¸ªäº‹ä»¶
+//        subject.onNext("one");        //one two three
 //        subject.subscribe(observer);
 //        subject.onNext("two");
 //        subject.onNext("three");
@@ -49,13 +52,13 @@ public class Demo_BehaviorSubject {
 //        subject.onNext("zero");
 //        subject.onNext("one");
 //        subject.onCompleted();
-//        subject.subscribe(observer);//åªæ”¶åˆ°æœ€è¿‘ä¸€ä¸ªäº‹ä»¶
+//        subject.subscribe(observer);//complete
 //
 //        // observer will receive only onError
 //        BehaviorSubject<Object> subject = BehaviorSubject.create("default");
 //        subject.onNext("zero");
 //        subject.onNext("one");
-//        subject.onError(new RuntimeException("error"));//åªæ”¶åˆ°error
+//        subject.onError(new RuntimeException("error"));//error
 //        subject.subscribe(observer);
 
 

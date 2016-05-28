@@ -5,13 +5,13 @@ import rx.Subscription;
 import rx.subjects.PublishSubject;
 
 /**
- * Created by æœä¼Ÿ on 2016/5/26.
+ * Created by duwei on 2016/5/26.
  */
 public class Demo_PublishSubject {
 
 
     public static void main(String[] args){
-        //æ²¡æœ‰æ•°æ®è¦å‘é€ï¼Œå› æ­¤æˆ‘ä»¬çš„è§‚å¯Ÿè€…åªèƒ½ç­‰å¾…ï¼Œæ²¡æœ‰é˜»å¡çº¿ç¨‹ï¼Œä¹Ÿæ²¡æœ‰æ¶ˆè€—èµ„æº
+        //Ã»ÓĞÊı¾İÒª·¢ËÍ£¬Òò´ËÎÒÃÇµÄ¹Û²ìÕßÖ»ÄÜµÈ´ı£¬Ã»ÓĞ×èÈûÏß³Ì£¬Ò²Ã»ÓĞÏûºÄ×ÊÔ´
 
         rx.subjects.PublishSubject<String> stringPublishSubject = rx.subjects.PublishSubject.create();
 

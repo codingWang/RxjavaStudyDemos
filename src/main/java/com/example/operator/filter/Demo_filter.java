@@ -18,11 +18,11 @@ public class Demo_filter {
         List<String> list = Arrays.asList("Apple","Orange","Pear","Peach","Banana","Grape","Blueberry","Lemon","Pomegranate");
 
         Observable.from(list)
-                .filter(new Func1<String, Boolean>() {//只要条件符合filter()函数就会返回true。此时，值会发射出去并且所有的观察者都会接收到。
+                .filter(new Func1<String, Boolean>() {
                     @Override
-                    public Boolean call(String s) {     //filter()函数最常用的用法之一时过滤null对象：
+                    public Boolean call(String s) {
                        // System.out.println("call"+s);
-                        return s.startsWith("P");//只返回指定类型的
+                        return s.startsWith("P");
                     }
                 }).subscribe(new Observer<String>() {
             @Override
