@@ -20,11 +20,12 @@ public class Demo_merge_mergeDelayError {
         Observable<Integer> observable1 = Observable.from(list1);
         Observable<Integer> observable2 = Observable.from(list2);
 
-        Observable<Integer> mergedObservable = Observable.merge(observable1,observable2);//鍚堝苟涓や釜鏁版嵁婧?
+        Observable<Integer> mergedObservable = Observable.merge(observable1,observable2);
 
 
 //        Observable.mergeDelayError(observable1,observable2);
-// 从一个Observable中继续发射数据即便是其中有一个抛出了错误。当所有的Observables都完成时，mergeDelayError()将会发射onError()
+// 从一个Observable中继续发射数据即便是其中有一个抛出了错误。
+// 当所有的Observables都完成时，mergeDelayError()将会发射onError()
 
         mergedObservable.subscribe(new Action1<Integer>() {
             @Override
