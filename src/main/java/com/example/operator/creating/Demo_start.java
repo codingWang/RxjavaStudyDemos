@@ -1,6 +1,5 @@
 package com.example.operator.creating;
 
-import rx.Observable;
 
 /**
  * Created by duwei on 2016/5/28.

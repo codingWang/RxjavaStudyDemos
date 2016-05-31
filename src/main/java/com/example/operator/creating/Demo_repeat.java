@@ -1,5 +1,6 @@
 package com.example.operator.creating;
 
+
 /**
  * Created by 杜伟 on 2016/5/28.
  *
@@ -7,6 +8,7 @@ package com.example.operator.creating;
  */
 public class Demo_repeat {
     public static void main(String[] args) {
+
 
     }
 }

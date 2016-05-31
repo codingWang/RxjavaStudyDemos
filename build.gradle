@@ -1,4 +1,18 @@
 apply plugin: 'java'
+apply plugin: 'me.tatarka.retrolambda'
+repositories {
+    mavenCentral()
+}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'me.tatarka:gradle-retrolambda:3.2.5'
+    }
+}
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -6,4 +20,5 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.0.2'
     compile 'com.squareup.okhttp3:okhttp:3.3.0'
     compile 'com.google.code.gson:gson:2.2.4'
+
 }

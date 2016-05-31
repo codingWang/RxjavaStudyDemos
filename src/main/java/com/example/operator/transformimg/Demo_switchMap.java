@@ -13,7 +13,7 @@ public class Demo_switchMap {
     public static void main(String[] args) {
 
 
-        
+
     }
 
 }
