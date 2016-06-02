@@ -32,6 +32,7 @@
     <orderEntry type="library" exported="" name="okhttp-3.3.0" level="project" />
     <orderEntry type="library" exported="" name="gson-2.2.4" level="project" />
     <orderEntry type="library" exported="" name="okio-1.8.0" level="project" />
+    <orderEntry type="library" exported="" name="rxjava-async-util-0.21.0" level="project" />
     <orderEntry type="library" exported="" name="rxjava.rxjava" level="project" />
   </component>
 </module>

@@ -21,4 +21,7 @@ dependencies {
     compile 'com.squareup.okhttp3:okhttp:3.3.0'
     compile 'com.google.code.gson:gson:2.2.4'
 
+    compile 'io.reactivex:rxjava-async-util:0.21.0'
+
+
 }
