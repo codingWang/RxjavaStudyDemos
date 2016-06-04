@@ -8,3 +8,5 @@ Rxjava Demos -----Continual updates of content
 some useful articles:
 
 [concatMap() vs flatMap()](http://fernandocejas.com/2015/01/11/rxjava-observable-tranformation-concatmap-vs-flatmap/)
+
+[Observables, and Callbacks and Threading, Oh My!](https://robots.thoughtbot.com/observables-and-callbacks-and-threading-oh-my)
